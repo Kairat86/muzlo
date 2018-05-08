@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Studio</title>
+</head>
+<body>
+
+{% if list %}
+    <ul>
+        {% for name in list %}
+            <li><a>{{ name }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No music available.</p>
+{% endif %}</body>
+</html>
